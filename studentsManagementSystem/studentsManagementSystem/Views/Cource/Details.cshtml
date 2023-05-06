@@ -1,0 +1,34 @@
+﻿@model studentsManagementSystem.Models.Cource
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2  style="color: #bb7a37;">Details Cource</h2>
+
+<div>
+    <h4>Cource</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cource1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cource1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.duration)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
